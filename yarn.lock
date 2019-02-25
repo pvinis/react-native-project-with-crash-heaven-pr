@@ -4529,10 +4529,9 @@ react-is@^16.6.3, react-is@^16.8.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.3.tgz#4ad8b029c2a718fc0cfc746c8d4e1b7221e5387d"
   integrity sha512-Y4rC1ZJmsxxkkPuMLwvKvlL1Zfpbcu+Bf4ZigkHup3v9EfdYhAlWAaVyA19olXq2o2mGn0w+dFKvk3pVVlYcIA==
 
-react-native@0.58.5:
+"react-native@git+ssh://git@github.com/pvinis/react-native.git#crash-reporting-heaven":
   version "0.58.5"
-  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.58.5.tgz#672709bafd845e35ab4dd32b8ccccae32d54d552"
-  integrity sha512-wCWjUAtvRK7A1YxnCANAW8/3+x3gh2WUifYqdvKSAJ6wGsftLgvj1JxIaUMQ3mKi0aUeAlHnz0cO21ZPCLgd+g==
+  resolved "git+ssh://git@github.com/pvinis/react-native.git#051d9a49e3c278f792865be5cf9fd77dcc3f108f"
   dependencies:
     "@babel/runtime" "^7.0.0"
     absolute-path "^0.0.0"
