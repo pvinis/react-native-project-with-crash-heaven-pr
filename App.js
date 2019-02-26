@@ -8,7 +8,7 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {Platform, Button, StyleSheet, Text, View} from 'react-native';
 
 import { Sentry } from 'react-native-sentry';
 
@@ -22,13 +22,17 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 
-type Props = {};
-export default class App extends Component<Props> {
+export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>Welcome to React Native!</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
+        <Button title='js' onPress={() => {
+          const a = {}
+          const b = a.c.w
+          console.log(b)
+        }} />
         <Text style={styles.instructions}>{instructions}</Text>
       </View>
     );
