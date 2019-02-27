@@ -8,11 +8,13 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, Button, StyleSheet, Text, View} from 'react-native';
+import {Platform, NativeModules, Button, StyleSheet, Text, View} from 'react-native';
 
 import { Sentry } from 'react-native-sentry';
 
 Sentry.config('https://c9e76cb05d034f55b99d8ad3e5392bc6@sentry.io/1402992').install();
+
+const { Crashy } = NativeModules
 
 
 const instructions = Platform.select({
@@ -28,6 +30,9 @@ export default class App extends Component {
       <View style={styles.container}>
         <Text style={styles.welcome}>Welcome to React Native!</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
+        <Button title='na' onPress={() => {
+          Crashy.doIt()
+        }} />
         <Button title='js' onPress={() => {
           const a = {}
           const b = a.c.w
