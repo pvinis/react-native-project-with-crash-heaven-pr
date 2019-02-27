@@ -10,9 +10,13 @@ The Native crashes are initialized in the `App.js` file, and they are in the `Cr
 The results in sentry are these:
 
 ios js:
+![ios-js](ios-js.png)
 
 ios native:
+![ios-native](ios-native.png)
 
 android js:
+![android-js](android-js.png)
 
 android native:
+![android-native](android-native.png)
